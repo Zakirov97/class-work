@@ -1,23 +1,21 @@
 #include <algorithm>
-#include <functional>
-#include <array>
 #include <iostream>
 #include <string>
 using namespace std;
 int main()
 {
-	string str;
-	getline(cin, str);
+	string s;
+	getline(cin, s);
 	bool arr[256];
 	for (int i = 0; i < 255; ++i)
 	{
 		arr[i] = false;
 	}
-	sort(str.begin(), str.end());
+	sort(s.begin(), s.end());
 
-	for (int i = 0; i < str.length(); ++i)
+	for (int i = 0; i < s.length(); ++i)
 	{
-		if (str[i] == str[i + 1])
+		if (s[i] == s[i + 1])
 		{
 			cout << "no";
 			return 0;
