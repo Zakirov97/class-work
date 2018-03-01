@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int n, summ = 0, j = 0, ost = 0,i = 0;
+	cin >> n;
+	while (n>0)
+	{
+		while (summ < n)
+		{
+			j++;
+			summ = j * j * j;
+		}
+		--j;
+		ost = n - j * j * j;
+		summ = 0;
+		i++;
+		if (ost < 8)
+		{
+			i += ost;
+			cout << i;
+			system("pause");
+			return 0;
+		}
+		n = ost;
+		j = 0;
+		
+	}
+	cout << i;
+	system("pause");
+	return 0;
+}
+
