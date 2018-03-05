@@ -310,3 +310,28 @@ int main()
 	system("pause");
 	return 0;
 }
+
+
+
+zadacha 7;
+#include<iostream>
+#include <ctime>
+using namespace std;
+int d = 0;
+int func(int n)
+{
+	if (n == 0) {
+		return d;
+	}
+	d += n % 10;
+	n = n / 10;
+	return func(n);
+}
+int main()
+{
+	int n;
+	cin >> n;
+	cout << func(n);
+	system("pause");
+	return 0;
+}
