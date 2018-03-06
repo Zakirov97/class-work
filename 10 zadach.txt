@@ -335,3 +335,81 @@ int main()
 	system("pause");
 	return 0;
 }
+
+zadacha 8;
+
+#include <iostream>
+using namespace std;
+int cnt = 0;
+int vklad(int x, int p, int y)
+{
+
+	x=(x*p / 100) + x;
+	cnt++;
+	if (x > y)
+	{
+		return cnt;
+	}
+	return vklad(x, p, y);
+}
+int main()
+{
+	int x, p, y;
+	cin >> x >> p >> y;
+	cout << vklad(x,p,y);
+	system("pause");
+	return 0;
+}
+
+
+zadacha 9;
+#include <iostream>
+using namespace std;
+int sum = 0;
+int f1()
+{
+	int a;
+	cin >> a;
+	if (a == 0)
+	{
+		return sum;
+	}
+	sum += a;
+	return f1();
+}
+int main()
+{
+	cout << f1();
+	system("pause");
+	return 0;
+}
+
+
+zadacha 10;
+#include <iostream>
+#include <vector>
+using namespace std;
+int max = 0,c = 0;
+int posl()
+{
+	int n;
+	cin >> n;
+	
+	if (max < n)
+	{
+		c = max;
+		max = n;
+	
+	}
+	if (n == 0)
+	{
+		return c;
+	}
+	return posl();
+}
+int main()
+{
+	cout << posl();
+	system("pause");
+	return 0;
+}
