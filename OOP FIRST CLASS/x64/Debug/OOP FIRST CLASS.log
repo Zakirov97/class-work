@@ -1,0 +1,3 @@
+﻿  rectangle.cpp
+Source.obj : error LNK2005: "public: __cdecl rectangle::rectangle(double,double)" (??0rectangle@@QEAA@NN@Z) already defined in rectangle.obj
+C:\Users\закировд\Documents\Visual Studio 2015\Projects\x64\Debug\OOP FIRST CLASS.exe : fatal error LNK1169: one or more multiply defined symbols found
