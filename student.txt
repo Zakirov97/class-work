@@ -1,0 +1,136 @@
+#include <iostream>
+class student {
+	char* name;
+	char* groupName;
+	int age;
+	int* marks;
+public:
+	//Getters&&Setters
+
+	//конструктор копирования
+	student(const student&obj) {
+		age = obj.age;
+		name = new char[strlen(obj.name) + 1];
+		strcpy_s(name, strlen(obj.name) + 1, obj.name);
+
+		groupName = new char[strlen(obj.groupName) + 1];
+		strcpy_s(groupName, strlen(obj.groupName) + 1, obj.groupName);
+		int size = sizeof(obj.marks) / sizeof(int);
+		marks = new int[size];
+		for (size_t i = 0; i < size; i++)
+		{
+			marks[i] = obj.marks[i];
+		}
+	}
+
+
+
+	student(const char*n,const char*gr_name,int a,const int*m) {
+		name = new char[strlen(n) + 1];
+		strcpy_s(name, strlen(n) + 1, n);
+		groupName = new char[strlen(gr_name) + 1];
+		strcpy_s(groupName, strlen(gr_name) + 1, gr_name);
+		age = a;
+		int size = sizeof(m) / sizeof(int);
+		std::cout << size;
+		marks = new int[size];
+		for (size_t i = 0; i < size; i++)
+		{
+			marks[i] = m[i];
+		}
+
+	}
+	void print_info() {
+		std::cout << "student name: " << name <<std::endl;
+		std::cout << "student age: " << age << std::endl;
+		std::cout << "group name: " << groupName << std::endl;
+		std::cout << "marks: ";
+		for (size_t i = 0; i < sizeof(marks)/sizeof(int); i++)
+		{
+			std::cout << marks[i] << " ";
+		}
+		std::cout << "\n";
+	}
+	~student() {
+		std::cout << "students destructor\n";
+		delete[]name;
+	}
+};
+////передача объекта по значению
+//void add_mark(student &s) {
+//
+//}
+//
+//void inc(int x) {
+//	x++;
+//}
+//
+////возврат объекта из ф-ии по значению
+//student f() {
+//	student s("rrr");
+//	return s;
+//}
+
+void main() {
+
+	int *arr = new int[6]{ 1, 2, 3, 4, 5, 6 };
+
+	std::cout << sizeof(arr)/sizeof(arr[0])<<"\n";
+	student s1("vasya", "smp-172.2", 18, arr);
+	s1.print_info();
+
+
+
+	//{		
+	//	student vasya("vasya");
+	//	student petya = vasya;
+
+
+	//	//student st = f();
+
+
+	//	//student s("Petya");
+	//	//add_mark(s);
+	//	//s.print_info();
+	//	//system("pause");
+	//	////инициализация при создании
+	//	//student s2 = s;
+	//	//student s2(s);
+	//	////s.print_info();
+	//	////s2.print_info();
+	//}
+	//
+	
+	
+	
+	//const char*s1 = new char[2]{'1','2'};
+	//char* const s2 = new char[2]{ '3','4' };
+	//const char* const s3 = new char[2]{ '5','6' };
+	////std::cout << s1 << s2 << s3;
+	//s1[0] = 'q';
+	//s2[0] = 'q';
+	//s3[0] = 'q';
+
+	//s1 = new char[5];
+	//s2 = new char[5];
+	//s3 = new char[5];
+	system("pause");
+
+	
+}
+
+
+
+
+class drob {
+	int x, y;
+public:
+	drob(const drob&obj) {
+		x = obj.x;
+		y = obj.y;
+	}
+};
+
+//инициализация при создании объекта
+//передача объекта в ф-ию по значению
+//возврат объекта из ф-ии по значению
