@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 class student {
 	char* name;
 	char* groupName;
@@ -80,7 +80,6 @@ void main() {
 	s1.print_info();
 
 
-
 	//{		
 	//	student vasya("vasya");
 	//	student petya = vasya;
@@ -132,5 +131,33 @@ public:
 };
 
 //инициализация при создании объекта
+drob a(3,2);
+drob b = a;
+drob b(a);
 //передача объекта в ф-ию по значению
 //возврат объекта из ф-ии по значению
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
