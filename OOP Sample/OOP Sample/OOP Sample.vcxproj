@@ -22,7 +22,12 @@
     <ProjectGuid>{E1B6C5CE-BEC5-4ADB-982D-35F387355678}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>OOPSample</RootNamespace>
+<<<<<<< HEAD
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+=======
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>TimeProject</ProjectName>
+>>>>>>> ffedc3514fa8516bfb26c7c7157d25f666003ee6
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

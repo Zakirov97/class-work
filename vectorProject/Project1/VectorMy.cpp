@@ -15,7 +15,6 @@ VectorMy::VectorMy(int size, int num)
 	}
 }
 
-
 VectorMy::~VectorMy()
 {
 	delete[] arr;
@@ -72,7 +71,6 @@ void VectorMy::print()
 		cout << this->arr[i] << " ";
 	}
 	cout << endl;
-
 }
 
 void VectorMy::clear()
@@ -80,6 +78,44 @@ void VectorMy::clear()
 	delete[] arr;
 	arr = nullptr;
 	size = 0;
+}
+
+void VectorMy::insert(int pos, int value)
+{
+	int *arr1 = new int[size + 1];
+	int cnt = 0;
+	for (int i = 0; i < size + 1; i++)
+	{
+		if (pos == i)
+		{
+			arr1[i] = value;
+			++cnt;
+		}
+		else
+		{
+			arr1[i] = arr[i-cnt];
+		}
+	}
+	++size;
+	delete[] arr;
+	this->arr = arr1;
+}
+
+void VectorMy::erase(int pos)
+{
+	for (int i = pos; i < size-1; i++)
+	{
+		swap(arr[i], arr[i + 1]);
+	}
+	--size;
+}
+
+void VectorMy::reverse()
+{
+	for (int i = 0; i < size/2; i++)
+	{
+		swap(arr[i], arr[size - i - 1]);
+	}
 }
 
 bool VectorMy::isEmpty()

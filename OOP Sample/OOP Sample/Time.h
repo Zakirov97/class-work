@@ -20,8 +20,8 @@ public:
 	void addMinute();
 	void addSecond();
 
-	std::string S(int h, int m, int s);
-	Time();
+	Time(int _h, int _m, int _s);
 	~Time();
 };
+
 

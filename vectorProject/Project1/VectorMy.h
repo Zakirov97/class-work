@@ -15,6 +15,9 @@ public:
 	void pop_back();
 	void print();
 	void clear();
+	void insert(int pos, int value);
+	void erase(int pos);
+	void reverse();
 	bool isEmpty();
 	int getSize();
 	VectorMy(const VectorMy& ad);

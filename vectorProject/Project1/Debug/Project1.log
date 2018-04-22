@@ -1,4 +1,5 @@
-﻿  main.cpp
-c:\users\земцева\documents\visual studio 2015\projects\project1\project1\main.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Project1.vcxproj -> c:\users\земцева\documents\visual studio 2015\Projects\Project1\Debug\Project1.exe
-  Project1.vcxproj -> c:\users\земцева\documents\visual studio 2015\Projects\Project1\Debug\Project1.pdb (Partial PDB)
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Project1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  VectorMy.cpp
+c:\users\diasz\desktop\class-work\vectorproject\project1\vectormy.cpp(69): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\diasz\desktop\class-work\vectorproject\project1\vectormy.cpp(142): warning C4018: <: несоответствие типов со знаком и без знака
+  Project1.vcxproj -> C:\Users\diasz\Desktop\class-work\vectorProject\Debug\VectorProject.exe

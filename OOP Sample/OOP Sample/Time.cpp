@@ -96,20 +96,12 @@ void Time::addSecond()
 	}
 }
 
-std::string Time::S(int h, int m, int s)
+
+Time::Time(int _h, int _m, int _s)
 {
-	
-	std::string s1, s2, s3;
-	s1 = std::to_string(h);
-	s2 = std::to_string(m);
-	s3 = std::to_string(s);	
-
-	return s1;
-}
-
-
-Time::Time()
-{
+	setH(_h);
+	setM(_m);
+	setS(_s);
 }
 
 
