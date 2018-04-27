@@ -114,6 +114,15 @@ void Time::redSec(int s)
 	}
 }
 
+const bool & Time::operator==(const Time & a)
+{
+	if (this->h == a.h &&this->m == a.m &&this->s == a.s)
+	{
+		return true;
+	}
+	return false;
+}
+
 const Time & Time::operator++(int)
 {
 	Time a(*this);

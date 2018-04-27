@@ -20,6 +20,7 @@ public:
 	void redMin(int m = 0);
 	void redSec(int s = 0);
 
+	const bool&operator==(const Time&a);
 	const Time&operator++();
 	const Time&operator++(int);
 	const Time&operator+=(const Time &a);
