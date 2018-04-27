@@ -4,7 +4,8 @@
 
 drob::drob(int x, int y)
 {
-
+	setX(x);
+	setY(y);
 }
 void drob::setX(int x)
 {
@@ -16,6 +17,7 @@ void drob::setY(int y)
 		this->y = y;
 	else this->y = 1;
 }
+
 
 const drob& drob::operator+=(const drob &a)
 {
@@ -89,6 +91,14 @@ bool operator==(const drob &a, const drob &b)
 	return a.getDouble() == b.getDouble();
 }
 
+drob operator-(drob & b)
+{
+	drob tmp(b);
+	tmp.setX(tmp.getX()*-1);
+	return tmp;
+}
+
+
 
 void drob::operator+=(int a) 
 {
@@ -106,6 +116,9 @@ void drob::operator/=(int a)
 {
 	this->x /= a;
 }
+
+
+
 const drob & drob::operator++()
 {
 	x += y;
@@ -127,6 +140,10 @@ const drob & drob::operator--(int)
 	drob tmp(*this);
 	this->x -= this->y;
 	return tmp;
+}
+std::ostream & drob::operator<<(std::ostream & out, const drob & a)
+{
+	// TODO: insert return statement here
 }
 //c = a+5
 drob operator+(const drob & a, int b)
