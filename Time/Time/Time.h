@@ -25,6 +25,14 @@ public:
 	const Time&operator++(int);
 	const Time&operator+=(const Time &a);
 	const Time&operator-=(const Time &a);
+	const Time&operator--();
+	const Time&operator--(int);
+	const bool&operator!=(const Time&a);
+	const bool&operator>(const Time&a);
+	const bool&operator<(const Time&a);
+	const bool&operator>=(const Time&a);
+	const bool&operator<=(const Time&a);
+
 
 	Time(int h = 0, int m = 0, int s = 0);
 	~Time();

@@ -146,6 +146,104 @@ const Time & Time::operator-=(const Time & a)
 	return *this;
 }
 
+const Time & Time::operator--()
+{
+	this->redSec(1);
+	return *this;
+}
+
+const Time & Time::operator--(int)
+{
+	Time a(*this);
+	this->redSec(1);
+	return a;
+}
+
+const bool & Time::operator!=(const Time & a)
+{
+	if (this->h != a.h || this->m != a.m || this->s != a.s)
+	{
+		return true;
+	}
+	return false;
+}
+
+const bool & Time::operator>(const Time & a)
+{
+	if (this->h > a.h)
+	{
+		return true;
+	}
+	if (this->h == a.h && this->m > a.m)
+	{
+		return true;
+	}
+	if (this->h == a.h&&this->m == a.m && this->s > a.s)
+	{
+		return true;
+	}
+	return false;
+}
+
+const bool & Time::operator<(const Time & a)
+{
+	if (this->h < a.h)
+	{
+		return true;
+	}
+	if (this->h == a.h && this->m < a.m)
+	{
+		return true;
+	}
+	if (this->h == a.h&&this->m == a.m && this->s < a.s)
+	{
+		return true;
+	}
+	return false;
+}
+
+const bool & Time::operator>=(const Time & a)
+{
+	if (this->h == a.h &&this->m == a.m &&this->s == a.s)
+	{
+		return true;
+	}
+	if (this->h > a.h)
+	{
+		return true;
+	}
+	if (this->h == a.h && this->m > a.m)
+	{
+		return true;
+	}
+	if (this->h == a.h&&this->m == a.m && this->s > a.s)
+	{
+		return true;
+	}
+	return false;
+}
+
+const bool & Time::operator<=(const Time & a)
+{
+	if (this->h == a.h && this->m == a.m && this->s == a.s)
+	{
+		return true;
+	}
+	if (this->h < a.h)
+	{
+		return true;
+	}
+	if (this->h == a.h && this->m < a.m)
+	{
+		return true;
+	}
+	if (this->h == a.h&&this->m == a.m && this->s < a.s)
+	{
+		return true;
+	}
+	return false;
+}
+
 
 const Time & Time::operator++()
 {
