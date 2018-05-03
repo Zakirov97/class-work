@@ -66,7 +66,7 @@ void VectorMy::pop_back()
 
 void VectorMy::print()
 {
-	for (size_t i = 0; i < size; i++)
+	for (int i = 0; i < size; i++)
 	{
 		cout << this->arr[i] << " ";
 	}
@@ -107,9 +107,9 @@ void VectorMy::erase(int pos)
 	{
 		swap(arr[i], arr[i + 1]);
 	}
-	--size;
+	--size;  
 }
-
+ 
 void VectorMy::reverse()
 {
 	for (int i = 0; i < size/2; i++)
