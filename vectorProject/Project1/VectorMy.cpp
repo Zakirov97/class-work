@@ -1,5 +1,4 @@
 #include "VectorMy.h"
-#include <vector>
 VectorMy::VectorMy()
 {
 	this->size = 0;
@@ -68,9 +67,9 @@ void VectorMy::print()
 {
 	for (int i = 0; i < size; i++)
 	{
-		cout << this->arr[i] << " ";
+		std::cout << this->arr[i] << " ";
 	}
-	cout << endl;
+	std::cout << std::endl;
 }
 
 void VectorMy::clear()
@@ -105,7 +104,7 @@ void VectorMy::erase(int pos)
 {
 	for (int i = pos; i < size-1; i++)
 	{
-		swap(arr[i], arr[i + 1]);
+		std::swap(arr[i], arr[i + 1]);
 	}
 	--size;  
 }
@@ -114,7 +113,7 @@ void VectorMy::reverse()
 {
 	for (int i = 0; i < size/2; i++)
 	{
-		swap(arr[i], arr[size - i - 1]);
+		std::swap(arr[i], arr[size - i - 1]);
 	}
 }
 
@@ -139,7 +138,7 @@ VectorMy::VectorMy(const VectorMy & ad)
 	else
 	{
 		this->arr = new int [this->size];
-		for (size_t i = 0; i < this->size; i++)
+		for (int i = 0; i < this->size; i++)
 		{
 			this->arr[i] = ad.arr[i];
 

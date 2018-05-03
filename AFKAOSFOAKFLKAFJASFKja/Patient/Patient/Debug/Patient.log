@@ -1,0 +1,27 @@
+﻿  String_.cpp
+  Source.cpp
+c:\users\закировд\documents\visual studio 2015\projects\patient\patient\source.cpp(5): error C2512: 'Patient': no appropriate default constructor available
+  c:\users\закировд\documents\visual studio 2015\projects\patient\patient\patient.h(6): note: see declaration of 'Patient'
+c:\users\закировд\documents\visual studio 2015\projects\patient\patient\source.cpp(13): warning C4018: '<': signed/unsigned mismatch
+c:\users\закировд\documents\visual studio 2015\projects\patient\patient\source.cpp(15): error C2678: binary '==': no operator found which takes a left-hand operand of type 'String_' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(389): note: could be 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(381): note: or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(373): note: or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(365): note: or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(339): note: or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) throw()'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(334): note: or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) throw()'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(329): note: or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) throw()'
+  c:\users\закировд\documents\visual studio 2015\projects\patient\patient\source.cpp(15): note: while trying to match the argument list '(String_, String_)'
+c:\users\закировд\documents\visual studio 2015\projects\patient\patient\source.cpp(17): error C3867: 'Patient::getName': non-standard syntax; use '&' to create a pointer to member
+  Patient.cpp
+c:\users\закировд\documents\visual studio 2015\projects\patient\patient\patient.cpp(27): error C2678: binary '==': no operator found which takes a left-hand operand of type 'String_' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(389): note: could be 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(381): note: or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(373): note: or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(365): note: or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(339): note: or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) throw()'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(334): note: or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) throw()'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(329): note: or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) throw()'
+  c:\users\закировд\documents\visual studio 2015\projects\patient\patient\patient.cpp(27): note: while trying to match the argument list '(String_, const String_)'
+  Generating Code...
+c:\users\закировд\documents\visual studio 2015\projects\patient\patient\string_.cpp(105): warning C4715: 'String_::operator=': not all control paths return a value
