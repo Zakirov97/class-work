@@ -8,12 +8,14 @@ VectorMy::VectorMy()
 
 VectorMy::VectorMy(int size, int num)
 {
+	this->size = size;
 	this->arr = new int[size];
 	for (int i = 0; i < size; i++)
 	{
 		this->arr[i] = num;
 	}
 }
+
 
 VectorMy::~VectorMy()
 {
@@ -71,6 +73,7 @@ void VectorMy::print()
 		cout << this->arr[i] << " ";
 	}
 	cout << endl;
+
 }
 
 void VectorMy::clear()
@@ -80,52 +83,114 @@ void VectorMy::clear()
 	size = 0;
 }
 
-void VectorMy::insert(int pos, int value)
-{
-	int *arr1 = new int[size + 1];
-	int cnt = 0;
-	for (int i = 0; i < size + 1; i++)
-	{
-		if (pos == i)
-		{
-			arr1[i] = value;
-			++cnt;
-		}
-		else
-		{
-			arr1[i] = arr[i-cnt];
-		}
-	}
-	++size;
-	delete[] arr;
-	this->arr = arr1;
-}
-
-void VectorMy::erase(int pos)
-{
-	for (int i = pos; i < size-1; i++)
-	{
-		swap(arr[i], arr[i + 1]);
-	}
-	--size;
-}
-
-void VectorMy::reverse()
-{
-	for (int i = 0; i < size/2; i++)
-	{
-		swap(arr[i], arr[size - i - 1]);
-	}
-}
-
 bool VectorMy::isEmpty()
 {
 	return size == 0;
 }
 
-int VectorMy::getSize()
+int VectorMy::getSize() const
 {
 	return this->size;
+}
+
+void VectorMy::insert(int pos, int value)
+{
+	int *new_arr;
+	if (size == 0 || pos >= size + 1) return;
+	new_arr = new int[size + 1];
+	for (size_t i = 0; i < pos; i++)
+	{
+		new_arr[i] = this->arr[i];
+	}
+	new_arr[pos] = value;
+	for (size_t i = pos + 1; i < size + 1; i++)
+	{
+		new_arr[i] = this->arr[i - 1];
+	}
+	++size;
+	delete[] this->arr;
+	this->arr = new_arr;
+}
+
+void VectorMy::erase(int pos)
+{
+	if (size == 0) { 
+		return; 
+	}
+	if (size == 1&&pos==0) {
+		clear();
+	}
+	for (size_t i = pos; i < size-1; i++)
+	{
+		swap(arr[i], arr[i + 1]);
+	}
+	size--;
+}
+
+void VectorMy::reverse()
+{
+	for (size_t i = 0; i < size/2; i++)
+	{
+		swap(arr[i], arr[size - i - 1]);
+	}
+}
+
+VectorMy & VectorMy::operator+=(const VectorMy & a)
+{
+	for (size_t i = 0; i < a.size; i++)
+	{
+		this->push_back(a[i]);
+		
+		
+	}
+	return *this;
+}
+
+VectorMy & VectorMy::operator=(const VectorMy & a)
+{
+	if (&a == this)
+		return *this;
+	this->clear();
+	if (a.size == 0)
+		return *this;
+	this->size = a.size;
+	this->arr = new int[size];
+
+	for (int i = 0; i < size; i++)
+	{
+		this->arr[i] = a[i];
+	}
+	return *this;
+}
+
+const bool & VectorMy::operator>(const VectorMy & a)
+{
+	return (this->size > a.size);
+}
+
+const bool & VectorMy::operator<(const VectorMy & a)
+{
+	return (this->size < a.size);
+}
+
+const bool & VectorMy::operator>=(const VectorMy & a)
+{
+	return (this->size >= a.size);
+}
+
+const bool & VectorMy::operator<=(const VectorMy & a)
+{
+	return (this->size <= a.size);
+}
+
+const bool & VectorMy::operator==(const VectorMy & a)
+{
+	return (this->size == a.size);
+}
+
+const bool & VectorMy::operator!=(const VectorMy & a)
+{
+	return (this->size != a.size);
 }
 
 VectorMy::VectorMy(const VectorMy & ad)
@@ -145,4 +210,42 @@ VectorMy::VectorMy(const VectorMy & ad)
 
 		}
 	}
+}
+ostream& operator<<(ostream&os, const VectorMy&pt)
+{
+	for (int i = 0; i < pt.getSize(); i++)
+	{
+		os << pt[i] << " ";
+	}
+	os << endl;
+	return os;
+}
+
+istream& operator >> (istream&is, VectorMy&pt)
+{
+	
+	pt.clear();
+	cout << "Enter size\n";
+	int ssize;
+	is >> ssize;
+	if (ssize > 0) {
+		cout << "\nEnter array\n";
+		pt.arr = new int[ssize];
+		int tmp;
+		for (int i = 0; i < ssize; ++i)
+		{
+			cin >> tmp;
+			pt[i] = tmp;
+			pt.arr[i] = tmp;
+		}
+	}
+	return is;
+}
+
+VectorMy & operator+(const VectorMy & a, const VectorMy & b)
+{
+	VectorMy s=a;
+	s += b;
+	
+	return s;
 }

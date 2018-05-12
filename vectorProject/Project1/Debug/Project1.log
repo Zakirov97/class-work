@@ -1,5 +1,12 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Project1.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   VectorMy.cpp
-c:\users\diasz\desktop\class-work\vectorproject\project1\vectormy.cpp(69): warning C4018: <: несоответствие типов со знаком и без знака
-c:\users\diasz\desktop\class-work\vectorproject\project1\vectormy.cpp(142): warning C4018: <: несоответствие типов со знаком и без знака
-  Project1.vcxproj -> C:\Users\diasz\Desktop\class-work\vectorProject\Debug\VectorProject.exe
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(71): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(101): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(106): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(123): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(132): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(140): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(174): warning C4018: '<': signed/unsigned mismatch
+c:\users\земцева\documents\visual studio 2015\projects\vectorproject\project1\vectormy.cpp(217): warning C4172: returning address of local variable or temporary: s
+  Project1.vcxproj -> C:\Users\ЗемцевА\Documents\Visual Studio 2015\Projects\vectorProject\Debug\VectorProject.exe
+  Project1.vcxproj -> C:\Users\ЗемцевА\Documents\Visual Studio 2015\Projects\vectorProject\Debug\VectorProject.pdb (Partial PDB)

@@ -1,32 +1,38 @@
 #include <ctime>
 #include "VectorMy.h"
-void main() {
-	srand(time(0));
-	VectorMy v;
-	v.print();
-	for (size_t i = 0; i < 10; i++)
+#include <vector>
+
+void inc(VectorMy&d) {
+	for (size_t i = 0; i < d.getSize(); i++)
 	{
-		v.push_back(rand() % 10);
+		d[i]++;
 	}
-	v.print();
+}
+int getMax(const VectorMy&d) {
+	d[5]++;
+	int max = d[5];
+	return max;
+}
+
+
+
+void main() {
 	
-	//v.insert(4, 50);
-	//v.print();
-	//////////////
-	//v.erase(5);
-	//v.print();
-	//////////////
-	//v.reverse();
-	//v.print();
+	srand(time(0));
+	
 
-
-	/*vec.print();
+	VectorMy v(15);
 	for (size_t i = 0; i < 15; i++)
 	{
-		vec.pop_back();
-		vec.print();
-	}*/
-
+		v[i] = i;
+	}
+	cout << v<<"---\n";
+	VectorMy s(4, 5);
+	//v += s;
+	v = s;
+	
+		cout << v;
+	
 	system("pause");
 }
 
