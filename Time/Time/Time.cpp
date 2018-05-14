@@ -1,5 +1,13 @@
 #include "Time.h"
 
+Time & Time::getTime()
+{
+	time_t t;
+	t = time(NULL);
+	system("cls");
+	puts(ctime(&t));
+}
+
 void Time::setH(int h)
 {
 	if (h > 23 || h < 0)

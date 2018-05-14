@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <time.h>
 using namespace std;
 
 class Time
@@ -7,6 +8,9 @@ class Time
 private:
 	int h, m, s;
 public:
+	static Time& getTime();
+	Time (const Time&) = delete;
+	Time& operator=(const Time&) = delete;
 	void setH(int h);
 	void setM(int m);
 	void setS(int s);

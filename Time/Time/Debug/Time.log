@@ -1,2 +1,8 @@
-﻿  main.cpp
-  Time.vcxproj -> C:\Users\diasz\Desktop\class-work\Time\Debug\Time.exe
+﻿  Time.cpp
+c:\users\diasz\desktop\class-work\time\time\time.cpp(8): error C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\time.h(475): note:  см. объявление "ctime"
+c:\users\diasz\desktop\class-work\time\time\time.cpp(136): error C2280: "Time::Time(const Time &)": предпринята попытка ссылки на удаленную функцию
+  c:\users\diasz\desktop\class-work\time\time\time.h(12): note:  см. объявление "Time::Time"
+  c:\users\diasz\desktop\class-work\time\time\time.h(12): note: "Time::Time(const Time &)": функция явно удалена
+  main.cpp
+  Создание кода...
