@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\diasz\source\repos\tree_\tree_\source.cpp(197): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  tree_.vcxproj -> C:\Users\diasz\source\repos\tree_\Debug\tree_.exe
