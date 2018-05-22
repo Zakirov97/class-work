@@ -139,11 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="dzD.h" />
+    <ClInclude Include="CircularQueue_.h" />
+    <ClInclude Include="PriorityQ.h" />
     <ClInclude Include="list_.h" />
+    <ClInclude Include="Queue_.h" />
+    <ClInclude Include="Stack_.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CircularQueue_.cpp" />
+    <ClCompile Include="PriorityQ.cpp" />
+    <ClCompile Include="Queue_.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Stack_.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

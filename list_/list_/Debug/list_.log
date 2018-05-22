@@ -1,17 +1,4 @@
-﻿  Source.cpp
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3973): error C2672: "_Sort_unchecked": не найдена соответствующая перегруженная функция
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3979): note: выполняется компиляция ссылки на экземпляр шаблон функции "void std::sort<_RanIt,std::less<void>>(const _RanIt,const _RanIt,_Pr)"
-          with
-          [
-              _RanIt=int,
-              _Pr=std::less<void>
-          ]
-  c:\users\diasz\source\repos\list_\list_\dzd.h(21): note: выполняется компиляция ссылки на экземпляр шаблон функции "void std::sort<int>(const _RanIt,const _RanIt)"
-          with
-          [
-              _RanIt=int
-          ]
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3973): error C2893: Сбой при специализации функции-шаблона "void std::_Sort_unchecked(_RanIt,_RanIt,iterator_traits<_Iter>::difference_type,_Pr)"
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3973): note: Со следующими аргументами шаблона:
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3973): note: "_RanIt=int"
-  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\algorithm(3973): note: "_Pr=std::less<void>"
+﻿  PriorityQ.cpp
+  Source.cpp
+  Generating Code...
+  list_.vcxproj -> C:\Users\diasz\source\repos\list_\Debug\list_.exe
