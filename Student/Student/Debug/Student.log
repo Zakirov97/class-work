@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\users\diasz\source\repos\student\student\source.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\diasz\source\repos\student\student\source.cpp(47): error C3867: 'Group::getStudents': non-standard syntax; use '&' to create a pointer to member
+c:\users\diasz\source\repos\student\student\source.cpp(47): error C2109: subscript requires array or pointer type
+c:\users\diasz\source\repos\student\student\source.cpp(47): error C2228: left of '.getID' must have class/struct/union
+c:\users\diasz\source\repos\student\student\source.cpp(49): error C3867: 'Group::getStudents': non-standard syntax; use '&' to create a pointer to member
+c:\users\diasz\source\repos\student\student\source.cpp(49): error C2109: subscript requires array or pointer type
