@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\diasz\desktop\mummal\mummal\main.cpp(3): warning C4305: 'argument': truncation from 'int' to 'bool'
+  Mummal.vcxproj -> C:\Users\diasz\Desktop\Mummal\Debug\Mammal.exe
