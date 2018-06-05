@@ -12,7 +12,7 @@ void Time::setH(int h)
 {
 	if (h > 23 || h < 0)
 	{
-		this->h = 0;
+		throw exception("Wrong hours");
 	}
 	else
 	{
@@ -24,7 +24,7 @@ void Time::setM(int m)
 {
 	if (m > 59 || m < 0)
 	{
-		this->m = 0;
+		throw exception("Wrong minutes");
 	}
 	else
 	{
@@ -36,7 +36,7 @@ void Time::setS(int s)
 {
 	if (s > 59 || s < 0)
 	{
-		this->s = 0;
+		throw exception("Wrong seconds");
 	}
 	else
 	{
