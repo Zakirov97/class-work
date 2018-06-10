@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\diasz\desktop\seabattle\seabattle\main.cpp(6): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  seabattle.vcxproj -> C:\Users\diasz\Desktop\seabattle\Debug\seabattle.exe
