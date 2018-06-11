@@ -8,6 +8,18 @@ vector<int> Student::getMarks() const
 	return mark;
 }
 
+string Student::codeInfo()const
+{
+	string str;
+	str = firstName + ";";
+	str += lastName + ";";
+	str += group + ";";
+	str += std::to_string(gender) + ";";
+	str += std::to_string(ID) + ";";
+	str += std::to_string(phone) + ";";
+	return str;
+}
+
 void Student::setFirstName(string firstName)
 {
 	this->firstName = firstName;
@@ -62,19 +74,19 @@ Student::~Student()
 {
 }
 
-ostream & operator<<(ostream & out, const Student & st)
-{
-	out << st.firstName << ' ' << st.lastName << ' ' << st.group << ' ' << endl;
-	if (st.gender)
-		out << "Man" << endl;
-	else
-		out << "Female" << endl;
-	out << "ID: " << st.ID << endl;
-	out << "Phone: " << st.phone << ' ' << endl << "Marks: ";
-	for (int i = 0; i < st.getMarks().size(); i++)
-	{
-		out << st.mark[i] << ' ';
-	}
-	out << endl;
-	return out;
-}
+//ostream & operator<<(ostream & out, const Student & st)
+//{
+//	out << st.firstName << ' ' << st.lastName << ' ' << st.group << ' ' << endl;
+//	if (st.gender)
+//		out << "Man" << endl;
+//	else
+//		out << "Female" << endl;
+//	out << "ID: " << st.ID << endl;
+//	out << "Phone: " << st.phone << ' ' << endl << "Marks: ";
+//	for (int i = 0; i < st.getMarks().size(); i++)
+//	{
+//		out << st.mark[i] << ' ';
+//	}
+//	out << endl;
+//	return out;
+//}

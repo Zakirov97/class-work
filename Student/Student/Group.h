@@ -1,6 +1,8 @@
 #pragma once
 #include "Student.h"
 #include <iostream>
+#include <fstream>
+#include <iterator>
 class Group
 {
 	vector<Student> st;
@@ -16,6 +18,7 @@ public:
 	Group();
 	Group(vector<Student> st);
 	~Group();
+	void saveToFile();
 	friend ostream& operator<<(ostream &out, Student &st);
 };
 

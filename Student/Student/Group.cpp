@@ -12,11 +12,11 @@ void Group::addStudent(Student st)
 {
 	this->st.push_back(st);
 }
-
-void Group::addMarkToStudent(Student &s, int markk)
-{
-	s.setMark(markk);
-}
+//
+//void Group::addMarkToStudent(Student &s, int markk)
+//{
+//	s.setMark(markk);
+//}
 
 Group::Group()
 {
@@ -34,12 +34,28 @@ Group::~Group()
 {
 }
 
-ostream & operator<<(ostream & out,  Group &gr)
+void Group::saveToFile() 
 {
-	for (int i = 0; i < gr.getStudents().size(); i++)
+	vector<string> str;
+	for (int i = 0; i < st.size(); i++)
 	{
-		out << gr.getStudents()[i] << endl;
+		string str2 = st[i].codeInfo();
+		str.push_back(str2);
 	}
-	return out;
+	fstream f("group.csv", std::ios::out);
+	ostream_iterator<string> out(f,"\n");
+	copy(str.begin(), str.end(), out);
+	
+	f.close();
+
 }
 
+//ostream & operator<<(ostream & out,  Group &gr)
+//{
+//	for (int i = 0; i < gr.getStudents().size(); i++)
+//	{
+//		out << gr.getStudents()[i] << endl;
+//	}
+//	return out;
+//}
+//

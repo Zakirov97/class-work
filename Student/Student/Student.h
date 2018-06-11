@@ -29,12 +29,12 @@ public:
 	int getID()const { return ID; };
 	int getPhone()const { return phone; };
 	vector<int> getMarks() const;
-
+	virtual string codeInfo()const;
 	Student();
 	Student(string firstName, string lastName, string group, bool gender, int ID, int phone);
 	~Student();
-	friend ostream& operator<<(ostream &out, const Student &st);
+	//friend ostream& operator<<(ostream &out, const Student &st);
 };
-
-ostream& operator<<(ostream &out, const Student &st);
+//
+//ostream& operator<<(ostream &out, const Student &st);
 
