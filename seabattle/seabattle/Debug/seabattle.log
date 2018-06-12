@@ -1,3 +1,5 @@
 ﻿  main.cpp
-c:\users\diasz\desktop\seabattle\seabattle\main.cpp(6): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  seabattle.vcxproj -> C:\Users\diasz\Desktop\seabattle\Debug\seabattle.exe
+c:\users\diasz\desktop\class-work\seabattle\seabattle\main.cpp(6): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\diasz\desktop\class-work\seabattle\seabattle\main.cpp(37): warning C4101: 'y2': unreferenced local variable
+c:\users\diasz\desktop\class-work\seabattle\seabattle\main.cpp(37): warning C4101: 'x2': unreferenced local variable
+  seabattle.vcxproj -> C:\Users\diasz\Desktop\class-work\seabattle\Debug\seabattle.exe

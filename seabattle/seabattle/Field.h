@@ -5,8 +5,8 @@ using namespace std;
 
 
 
-enum ship{ONE=1,TWO=2,THREE=3,FOUR=4};
-enum shoot_control{EMPTY = 0,SHIP = 1,HIT = 2,KILL = 3,MISS = 4};
+enum ship { ONE = 1, TWO = 2, THREE = 3, FOUR = 4 };
+enum shoot_control { EMPTY = 0, SHIP = 1, HIT = 2, KILL = 3, MISS = 4 };
 class Field
 {
 public:
@@ -23,5 +23,5 @@ public:
 	void clear();
 	int shoot(int x, int y);
 	void fillKilledShip(int x, int y);
+	void printEmptyField() const;
 };
-

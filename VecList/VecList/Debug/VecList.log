@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\diasz\source\repos\veclist\veclist\source.cpp(11): warning C4326: return type of 'main' should be 'int' instead of 'void'
+c:\users\diasz\source\repos\veclist\veclist\source.cpp(32): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  VecList.vcxproj -> C:\Users\diasz\source\repos\VecList\Debug\VecList.exe

@@ -11,7 +11,7 @@ bool Field::check(int x, int y) const
 		for (size_t j = y - 1; j < y + 2; j++)
 		{
 			/*if (i < 0 || j < 0 || i > 11 || j > 11)
-				return false;*/
+			return false;*/
 			if (this->field[i][j] != 0)
 				return false;
 		}
@@ -82,10 +82,10 @@ void Field::printField() const
 		cout << i << ' ';
 	}
 	cout << endl << endl << endl;
-	for (size_t i = 1; i < field.size()-1; i++)
+	for (size_t i = 1; i < field.size() - 1; i++)
 	{
-		cout << i << '\t' << ' ' ;
-		for (size_t j = 1; j < field.size()-1; j++)
+		cout << i << '\t' << ' ';
+		for (size_t j = 1; j < field.size() - 1; j++)
 		{
 			cout << field[i][j];
 			cout << ' ';
@@ -190,7 +190,7 @@ void Field::fillKilledShip(int x, int y)
 		{
 			if (x == i && y == j || x == KILL && j == KILL)
 				continue;
-			if (field[i][j] == HIT) 
+			if (field[i][j] == HIT)
 			{
 				field[i][j] = KILL;
 				fillKilledShip(i, j);
@@ -205,4 +205,6 @@ void Field::fillKilledShip(int x, int y)
 	}
 }
 
-
+void Field::printEmptyField() const
+{
+}

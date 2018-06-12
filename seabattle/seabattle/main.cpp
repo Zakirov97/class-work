@@ -13,31 +13,31 @@ int main() {
 
 	f2.clear();
 	f2.generation();
-	//f2.printField();
+	f2.printField();
 	while (1)
 	{
 		int x, y;
-		cout << "\nВведите координаты - ";
+		cout << "\nEnter coordinate - ";
 		cin >> x >> y;
-		int out = f2.shoot(x, y);
+		int out = f.shoot(x, y);
 		system("cls");
 		f.printField();
 		if (out == 4)
 		{
-			cout << "Вы промахнулись " << endl;
+			cout << "You are miss " << endl;
 		}
-		else if(out == 3)
+		else if (out == 3)
 		{
-			cout << "Вы убили " << endl;
+			cout << "You are kill " << endl;
 		}
 		else if (out == 2)
 		{
-			cout << "Вы попали но не убили " << endl;
+			cout << "Yout are hitted but don't kill " << endl;
 		}
 		int x2, y2;
-		
-	//system("pause");
+
+		//system("pause");
 	}
-	
+
 	return 0;
 }
