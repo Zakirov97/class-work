@@ -1,6 +1,6 @@
-Vasya corporation;;;;;;;
-Bike;Range Rover;red;200;4;500000;800;4
-car;Dodge;green;150;4;600000;200000;4
-Boat;Katamaran;yellow;100;4;400000;600;4
-Helicopter;Vertushka;pink;220;4;900000;1000;4
-Bus;Shkolniy;orange;90;20;700000;400;4
+Vasya corporation;
+Bike;Range Rover;red;200;4;500000;800;4;
+car;Dodge;green;150;4;200000;500;4;
+Boat;Katamaran;yellow;100;4;400000;600;4;
+Helicopter;Vertushka;pink;220;4;900000;1000;4;
+Bus;Shkolniy;orange;90;20;700000;400;4;

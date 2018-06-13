@@ -14,6 +14,64 @@ void SalerComp::addVehicle(Vehicle * vehc)
 	veh.push_back(std::auto_ptr<Vehicle>(vehc));
 }
 
+void SalerComp::buyVehicle()
+{
+	std::cout << "What kind of vehicle you want to buy?" << std::endl;
+	getInfo();
+	std::string vehName;
+	std::cout << "Enter model the vehicle - ";
+	std::cin >> vehName;
+	for (int i = 0; i < veh.size(); i++)
+		if (vehName == (*veh[i]).getModel()) {
+			*(veh).erase(veh.begin() + i);
+			break;
+		}
+	std::cout << "Thanks you for your purchase" << std::endl;
+	system("pause");
+}
+
+void SalerComp::rentVehicle()
+{
+	std::cout << "What kind of vehicle you want to rent?" << std::endl;
+	getInfo();
+	std::string vehName;
+	std::cout << "Enter model the vehicle - ";
+	std::cin >> vehName;
+	for (int i = 0; i < veh.size(); i++)
+		if (vehName == (*veh[i]).getModel()) {
+			rentVeh.push_back(std::auto_ptr<Vehicle>(veh[i]));
+			*(veh).erase(veh.begin() + i);
+			break;
+		}
+	std::cout << "Thanks you for your purchase" << std::endl;
+	system("pause");
+}
+
+void SalerComp::returnVehicle()
+{
+	std::cout << "What the vehicle you want return?" << std::endl;
+	getInfoAboutRentCar();
+	std::string vehName;
+	std::cout << "Enter model the vehicle - ";
+	std::cin >> vehName;
+	for (int i = 0; i < veh.size(); i++)
+		if (vehName == (*veh[i]).getModel()) {
+			veh.push_back(std::auto_ptr<Vehicle>(rentVeh[i]));
+			*(rentVeh).erase(rentVeh.begin() + i);
+			break;
+		}
+}
+
+void SalerComp::getInfoAboutRentCar() const
+{
+	for (int i = 0; i < rentVeh.size(); i++)
+	{
+		std::string res = typeid(*rentVeh[i]).name();
+		std::cout << res.substr(6) << std::endl;
+		rentVeh[i]->info();
+	}
+}
+
 void SalerComp::getInfo() const
 {
 	std:: cout << "Corporation: " << name << "\n--------------\n";
@@ -53,7 +111,7 @@ void SalerComp::readFromFile()
 	std::vector<std::string> s;
 	while (!f.eof())
 	{
-		s.clear();
+		
 		for (int i = 0; i < 8; i++)
 		{
 			std::string s1;
@@ -77,4 +135,6 @@ void SalerComp::readFromFile()
 			addVehicle(new Scooter(s[1], s[2], stoi(s[3]), stoi(s[4]), stoi(s[5]), stoi(s[6]), stoi(s[7])));
 
 	}
+	f.close();
+
 }

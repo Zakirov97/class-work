@@ -1,18 +1,2 @@
-﻿  Air_vehicle.cpp
-  Bike.cpp
-  Boat.cpp
-  Bus.cpp
-  car.cpp
-  Ground Vehicle.cpp
-  Helicopter.cpp
-  Plane.cpp
-  SalerComp.cpp
-c:\users\diasz\desktop\class-work\salercorporation\vehicle\salercomp.cpp(20): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\salercorporation\vehicle\salercomp.cpp(37): warning C4018: '<': signed/unsigned mismatch
-  Scooter.cpp
-  Source.cpp
-  Tank.cpp
-  Vehicle.cpp
-  Water_Vehicle.cpp
-  Generating Code...
+﻿  Source.cpp
   Vehicle.vcxproj -> C:\Users\diasz\Desktop\class-work\SalerCorporation\Debug\Vehicle.exe
