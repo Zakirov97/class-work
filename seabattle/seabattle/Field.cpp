@@ -87,8 +87,16 @@ void Field::printField() const
 		cout << i << '\t' << ' ';
 		for (size_t j = 1; j < field.size() - 1; j++)
 		{
-			cout << field[i][j];
-			cout << ' ';
+			if (field[i][j] == HIT)
+				cout << '@' << ' ';
+			else if (field[i][j] == KILL)
+				cout << 'X' << ' ';
+			else if (field[i][j] == MISS)
+				cout << '@' << ' ';
+			else
+			{
+				cout << field[i][j] << ' ';
+			}
 		}
 		cout << endl;
 	}
@@ -182,6 +190,26 @@ int Field::shoot(int x, int y)
 	return MISS;
 }
 
+void Field::shootBot()
+{
+	int randX = rand() % 10 + 1;
+	int randY = rand() % 10 + 1;
+	int out = shoot(randX, randY);
+	if (out == 4)
+	{
+		cout << "Bot are missed " << endl;
+	}
+	else if (out == 3)
+	{
+		cout << "Bot are kill " << endl;
+	}
+	else if (out == 2)
+	{
+		cout << "Bot are hitted but don't kill " << endl;
+	}
+	system("pause");
+}
+
 void Field::fillKilledShip(int x, int y)
 {
 	for (size_t i = x - 1; i < x + 2; i++)
@@ -205,6 +233,28 @@ void Field::fillKilledShip(int x, int y)
 	}
 }
 
-void Field::printEmptyField() const
+void Field::printBotField() const
 {
+	cout << '\t' << " ";
+	for (int i = 1; i < 11; i++)
+	{
+		cout << i << ' ';
+	}
+	cout << endl << endl << endl;
+	for (int i = 1; i < field.size()-1; i++)
+	{
+		cout << i << '\t' << ' ';
+		for (int j = 1; j < field.size()-1; j++)
+		{
+			if (field[i][j] == EMPTY || field[i][j] == SHIP)
+				cout << '0' << ' ';
+			else if (field[i][j] == HIT)
+				cout << 'H' << ' ';
+			else if (field[i][j] == MISS)
+				cout << '@' << ' ';
+			else if (field[i][j] == KILL)
+				cout << 'K' << ' ';
+		}
+		cout << endl;
+	}
 }

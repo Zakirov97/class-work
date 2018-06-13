@@ -1,6 +1,7 @@
-#pragma once
+﻿#pragma once
 #include <vector>
 #include <iostream>
+
 using namespace std;
 
 
@@ -22,6 +23,7 @@ public:
 	bool addShip(ship s);
 	void clear();
 	int shoot(int x, int y);
+	void shootBot();
 	void fillKilledShip(int x, int y);
-	void printEmptyField() const;
+	void printBotField() const;
 };

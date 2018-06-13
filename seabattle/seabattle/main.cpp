@@ -1,5 +1,6 @@
 #include "Field.h"
 #include <ctime>
+#include <iostream>
 
 int main() {
 	setlocale(0, "");
@@ -10,18 +11,21 @@ int main() {
 	f.clear();
 	f.generation();
 	f.printField();
-
+	cout << endl;
 	f2.clear();
 	f2.generation();
-	f2.printField();
+	f2.printBotField();
 	while (1)
 	{
 		int x, y;
 		cout << "\nEnter coordinate - ";
 		cin >> x >> y;
-		int out = f.shoot(x, y);
+		int out = f2.shoot(x, y);
+		f.shootBot();
 		system("cls");
 		f.printField();
+		cout << endl;
+		f2.printBotField();
 		if (out == 4)
 		{
 			cout << "You are miss " << endl;
@@ -32,9 +36,8 @@ int main() {
 		}
 		else if (out == 2)
 		{
-			cout << "Yout are hitted but don't kill " << endl;
+			cout << "You are hitted but don't kill " << endl;
 		}
-		int x2, y2;
 
 		//system("pause");
 	}
