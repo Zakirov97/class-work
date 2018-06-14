@@ -17,10 +17,12 @@ int main() {
 	f2.printBotField();
 	while (1)
 	{
-		int x, y;
+		char y;
+		int x;
 		cout << "\nEnter coordinate - ";
 		cin >> x >> y;
-		int out = f2.shoot(x, y);
+		int yy = y-64;
+		int out = f2.shoot(x, yy);
 		f.shootBot();
 		system("cls");
 		f.printField();

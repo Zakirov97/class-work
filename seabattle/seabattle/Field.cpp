@@ -79,7 +79,7 @@ void Field::printField() const
 	cout << '\t' << " ";
 	for (int i = 1; i < 11; i++)
 	{
-		cout << i << ' ';
+		cout << (char)(64+i) << ' ';
 	}
 	cout << endl << endl << endl;
 	for (size_t i = 1; i < field.size() - 1; i++)
@@ -238,7 +238,7 @@ void Field::printBotField() const
 	cout << '\t' << " ";
 	for (int i = 1; i < 11; i++)
 	{
-		cout << i << ' ';
+		cout << (char)(64 + i) << ' ';
 	}
 	cout << endl << endl << endl;
 	for (int i = 1; i < field.size()-1; i++)

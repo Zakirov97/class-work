@@ -1,14 +1,3 @@
-﻿  Field.cpp
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(9): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(11): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(25): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(27): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(45): warning C4018: '<=': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(47): warning C4018: '<=': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(137): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(147): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(215): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(217): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(244): warning C4018: '<': signed/unsigned mismatch
-c:\users\diasz\desktop\class-work\seabattle\seabattle\field.cpp(247): warning C4018: '<': signed/unsigned mismatch
+﻿  main.cpp
+c:\users\diasz\desktop\class-work\seabattle\seabattle\main.cpp(7): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   seabattle.vcxproj -> C:\Users\diasz\Desktop\class-work\seabattle\Debug\seabattle.exe
