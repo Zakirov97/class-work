@@ -1,0 +1,7 @@
+C:\Users\diasz\source\repos\oLLLL\oLLLL\obj\Debug\oLLLL.csprojAssemblyReference.cache
+C:\Users\diasz\source\repos\oLLLL\oLLLL\obj\Debug\oLLLL.csproj.CoreCompileInputs.cache
+C:\Users\diasz\source\repos\oLLLL\oLLLL\bin\Debug\oLLLL.exe.config
+C:\Users\diasz\source\repos\oLLLL\oLLLL\bin\Debug\oLLLL.exe
+C:\Users\diasz\source\repos\oLLLL\oLLLL\bin\Debug\oLLLL.pdb
+C:\Users\diasz\source\repos\oLLLL\oLLLL\obj\Debug\oLLLL.exe
+C:\Users\diasz\source\repos\oLLLL\oLLLL\obj\Debug\oLLLL.pdb
