@@ -1,0 +1,13 @@
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\KazTourApp.Tests.dll
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\KazTourApp.Tests.pdb
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\KazTourApp.DAL.dll
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\KazTourApp.Shared.dll
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\LiteDB.dll
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\KazTourApp.DAL.pdb
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\KazTourApp.Shared.pdb
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\bin\Debug\LiteDB.xml
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\obj\Debug\KazTourApp.Tests.csprojAssemblyReference.cache
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\obj\Debug\KazTourApp.Tests.csproj.CoreCompileInputs.cache
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\obj\Debug\KazTourApp.Tests.csproj.CopyComplete
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\obj\Debug\KazTourApp.Tests.dll
+C:\Users\diasz\Desktop\Week2-Final\KazTourApp\KazTourApp.Tests\obj\Debug\KazTourApp.Tests.pdb
